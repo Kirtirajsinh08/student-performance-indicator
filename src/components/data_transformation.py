@@ -1,8 +1,8 @@
-import os
 import sys
 import numpy as np
 import pandas as pd
-
+import os
+os.environ["LOKY_MAX_CPU_COUNT"] = "8"
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
